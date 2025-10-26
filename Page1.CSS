@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(./Fonts/Polices/Lato-Regular.ttf) format('truetype');
+    src: url(./Fonts/Polices/Lato-Regular.woff)
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url(./Fonts/Polices/Lato-Bold.ttf) format('truetype');
+    src: url(./Fonts/Polices/Lato-Bold.woff);
+}
+@font-face {
+    font-family: 'Lato-Italic';
+    src: url(./Fonts/Polices/Lato-Italic.ttf) format('truetype');
+    src: url(./Fonts/Polices/Lato-Italic.woff)
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url(./Fonts/Polices/Raleway-Regular.ttf) format('truetype');
+    src: url(./Fonts/Polices/Raleway-Regular.woff)
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url(./Fonts/Polices/Raleway-Bold.ttf) format('truetype');
+    src: url(./Fonts/Polices/Raleway-Bold.woff)
+}
+@font-face {
+    font-family: 'Raleway-Italic';
+    src: url(./Fonts/Polices/Raleway-Italic.ttf) format('truetype');
+    src: url(./Fonts/Polices/Raleway-Italic.woff)
+}
+html {
+    width: 1160px;
+}
