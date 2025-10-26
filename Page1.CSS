@@ -1,69 +1,189 @@
+/* ====== Polices ====== */
 @font-face {
-    font-family: 'Lato-Regular';
-    src: url(./Fonts/Polices/Lato-Regular.ttf) format('truetype');
-    src: url(./Fonts/Polices/Lato-Regular.woff)
-}
-@font-face {
-    font-family: 'Lato-Bold';
-    src: url(./Fonts/Polices/Lato-Bold.ttf) format('truetype');
-    src: url(./Fonts/Polices/Lato-Bold.woff);
+  font-family: 'Raleway-Regular';
+  src: url('./Fonts/Polices/Raleway-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Lato-Italic';
-    src: url(./Fonts/Polices/Lato-Italic.ttf) format('truetype');
-    src: url(./Fonts/Polices/Lato-Italic.woff)
+  font-family: 'Raleway-Bold';
+  src: url('./Fonts/Polices/Raleway-Bold.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Raleway-Regular';
-    src: url(./Fonts/Polices/Raleway-Regular.ttf) format('truetype');
-    src: url(./Fonts/Polices/Raleway-Regular.woff)
+  font-family: 'Raleway-Italic';
+  src: url('./Fonts/Polices/Raleway-Italic.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'Raleway-Bold';
-    src: url(./Fonts/Polices/Raleway-Bold.ttf) format('truetype');
-    src: url(./Fonts/Polices/Raleway-Bold.woff)
+
+/* ====== Variables et reset ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-@font-face {
-    font-family: 'Raleway-Italic';
-    src: url(./Fonts/Polices/Raleway-Italic.ttf) format('truetype');
-    src: url(./Fonts/Polices/Raleway-Italic.woff)
+
+:root {
+  --accent: #17abb3;
+  --title-color: #fff;
+  --body-bg: #f3f3f3;
+  --content-bg: #fff;
+  --max-width: 1160px;
+  --radius: 10px;
+  --hover-bg: rgba(23,171,179,0.08);
 }
-html {
-  background-color: #f3f3f3;
-}
+
+html { background: var(--body-bg); }
+
 body {
-  width: 1160px;
+  max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
-}
-.Comp,.Exp,dt,h1{
-    font-family: 'Lato-Bold'
-}
-dd,p,a,li,h3{
-    font-family: 'Raleway-Regular';
-}
-h1 {
-color: #ffffff;
-}
-h2{
-color: #ffffff;
-font-family: 'Lato-Regular';
-}
-h3{
-color: #17abb3;
-}
-header{
-    background-color: #17abb3;
-}
-p{
-    text-indent: 50px;
-    text-align: justify;
-}
-th{
-    font-family: 'Raleway-Italic';
+  background: var(--content-bg);
+  font-family: 'Raleway-Regular', sans-serif;
+  color: #222;
+  line-height: 1.5;
+  padding: 0 20px;
 }
 
-time{
-font-family: 'Lato-Italic';
-color: #17abb3
+/* ====== Header ====== */
+header {
+  background: var(--accent);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--content-bg);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.identity h1 {
+  color: var(--title-color);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.identity h2 {
+  color: var(--title-color);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0.3rem 0 1rem;
+}
+
+.contacts {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.contacts a {
+  color: var(--title-color);
+  background: rgba(255,255,255,0.1);
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.contacts a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ====== Contenu principal ====== */
+h3 {
+  color: var(--accent);
+  font-family: 'Raleway-Bold';
+  margin-top: 1.2rem;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+}
+
+.Comp {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+}
+.Comp li {
+  background: var(--hover-bg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* Langues */
+dt {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+dd {
+  margin: 0 0 0.6rem 1rem;
+}
+
+/* ====== Tables Formations / Expériences ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  transition: background 0.2s, border-left 0.2s;
+}
+tr:hover {
+  background: var(--hover-bg);
+  border-left: 4px solid var(--accent);
+}
+th, td {
+  padding: 0.4rem 0;
+  text-align: left;
+}
+td {
+  text-align: right;
+}
+.Exp {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* ====== Footer / Réseaux sociaux ====== */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0 2rem;
+}
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  transition: opacity 0.2s;
+}
+.social-icon:hover img {
+  opacity: 0.7;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 800px) {
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+}

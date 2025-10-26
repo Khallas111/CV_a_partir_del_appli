@@ -1,138 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Page1.CSS">
-    <title>Curicumun Vitae</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae – Salim Khorchi</title>
+
+  <!-- Import de Lato via Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="./Page1.CSS">
 </head>
+
 <body>
-    <header>
-    <h1>Salim Khorchi</h1>
-    <h2>Développeur Web et Web Mobile</h2>
-    <a href="mailto:salimkhorchi11@gmail.com">Mail</a>
-    <a href="tel:0772415145">Téléphone</a>
-    <a href="https://www.google.com/maps/place/49+Rue+de+Dunkerque,+11400+Castelnaudary/@43.3179228,1.944338,15z/data=!3m1!4b1!4m6!3m5!1s0x12ae5a8408cfd41d:0xe02e767b8063114!8m2!3d43.3179233!4d1.9546377!16s%2Fg%2F11cp7hlxyh?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D">Adresse</a>
-    <a href="#">Permis B</a>
-    <img src="" alt="">
-    </header>
-    <div>
-    <h3>Compétences</h3>
-    <ul class="Comp">
-        <li>Html</li>
+
+  <header>
+    <div class="header-inner">
+      <div class="profile">
+        <a href="./Images/profile-large.jpg" target="_blank" class="profile-link">
+          <img src="./Images/profile.jpg" alt="Photo de Salim Khorchi" class="profile-img">
+        </a>
+      </div>
+
+      <div class="identity">
+        <h1>Salim Khorchi</h1>
+        <h2>Développeur Web et Web Mobile</h2>
+        <nav class="contacts">
+          <a href="mailto:salimkhorchi11@gmail.com">Mail</a>
+          <a href="tel:0772415145">Téléphone</a>
+          <a href="https://www.google.com/maps/place/49+Rue+de+Dunkerque,+11400+Castelnaudary" target="_blank">Adresse</a>
+          <a href="#">Permis B</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h3>Compétences</h3>
+      <ul class="Comp">
+        <li>HTML</li>
         <li>CSS</li>
-        <li>Javascript</li>
+        <li>JavaScript</li>
         <li>PHP</li>
         <li>Python</li>
-    </ul>
-    <h3>Langues</h3>
-    <ul>
-        <dt>Français</dt>
-        <dd>Langue maternelle</dd>
-        <dt>Anglais</dt>
-        <dd>Intermédiaire</dd>
-        <dt>Espagnol</dt>
-        <dd>Notions</dd>
-    </ul>
-    <h3>Qualités</h3>
-    <ul>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Langues</h3>
+      <dl class="Langues">
+        <dt>Français</dt><dd>Langue maternelle</dd>
+        <dt>Anglais</dt><dd>Intermédiaire</dd>
+        <dt>Espagnol</dt><dd>Notions</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h3>Qualités</h3>
+      <ul>
         <li>Organisation</li>
         <li>Régularité</li>
         <li>Rigueur</li>
-        <li>Esprit d'équipe</li>
-    </ul>
-    <h3>Centres d'intérêt</h3>
-    <ul>
+        <li>Esprit d’équipe</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Centres d’intérêt</h3>
+      <ul>
         <li>Fitness</li>
         <li>Séries</li>
         <li>Jeux vidéos</li>
-    </ul>
-</div>
-<div>
-    <h3>Profil</h3>
-    <p>Après mes études dans le domaine de l'informatique, je me suis orienté dans le secteur de l'agroalimentaire, le bassin d'emploi étant le plus porteur dans ma localité. J'ai évolué jusqu'à atteindre des postes à responsabilités.
-        Aujourd'hui, je me reconverti professionnellement pour travailler dans le secteur d'activité qui me passionne : l'informatique.
+      </ul>
+    </section>
 
-    </p>
+    <section>
+      <h3>Profil</h3>
+      <p>
+        Après mes études dans le domaine de l’informatique, je me suis orienté dans le secteur de l’agroalimentaire, 
+        le bassin d’emploi étant le plus porteur dans ma localité. J’ai évolué jusqu’à atteindre des postes à responsabilités. 
+        Aujourd’hui, je me reconvertis professionnellement pour travailler dans le secteur d’activité qui me passionne : 
+        l’informatique.
+      </p>
+    </section>
 
-</div>
-<div>
-    <h3>Formations</h3>
-    <table>
-        <tr>
-            <th class="Exp">Bac GSI (Gestion des Systèmes d'Information)</th>
-            <td><time datetime="2014">2014</time></td>
-        </tr>
-        <tr>
-            <th class="Exp">Lycée Paul Sabatier Carcassonne</th>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th class="Exp">Titre Professionnel DWWM</th>
-            <td><time datetime="2025">2024/2025</time></td>
-        </tr>
-        <tr>
-            <th>Centre Européen de Formations</th>
-        </tr>
-    </table>
+    <section>
+      <h3>Formations</h3>
 
-</div>
+      <table>
+        <tr><th class="Exp">Bac GSI (Gestion des Systèmes d’Information)</th><td><time datetime="2014">2014</time></td></tr>
+        <tr><th>Lycée Paul Sabatier, Carcassonne</th></tr>
+      </table>
 
-<div>
-    <h3>Expérience professionnelle</h3>
-        <table>
-        <tr>
-            <th class="Exp">Conducteur de ligne de production</th>
-            <td><time datetime="2014">04/2025 - 08/2025</time></td>
-        </tr>
-        <tr>
-            <th>Les Occitanes</th>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th class="Exp">Préparateur en conditionnement</th>
-            <td><time datetime="2014">12/2024 - 04/2025</time></td>
-        </tr>
-        <tr>
-            <th>Nutrition et Santé</th>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th class="Exp">Pilote de lignes de productions</th>
-            <td><time datetime="2014">10/2020 - 09/2024</time></td>
-        </tr>
-        <tr>
-            <th>Les fromageries Occitanes</th>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th class="Exp">Préparateur en conditionnement</th>
-            <td><time datetime="2014">09/2019 - 09/2019</time></td>
-        </tr>
-        <tr>
-            <th>Compagnie Montagne Noire</th>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th class="Exp">Employé de laboratoire</th>
-            <td><time datetime="2014">04/2019 - 08/2019</time></td>
-        </tr>
-        <tr>
-            <th>Récapé</th>
-        </tr>
-    </table>
-</div>
-<footer>
-    <a href="#twitter"></a>
-    <a href="#insta"></a>
-    <a href="#likedin"></a>
-    <a href="#Github"></a>
-    <a href="#Pinterest"></a>
-</footer>
+      <table>
+        <tr><th class="Exp">Titre Professionnel DWWM</th><td><time datetime="2025">2024 – 2025</time></td></tr>
+        <tr><th>Centre Européen de Formations</th></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>Expériences professionnelles</h3>
+
+      <table>
+        <tr><th class="Exp">Conducteur de ligne de production</th><td><time>04/2025 – 08/2025</time></td></tr>
+        <tr><th>Les Occitanes</th></tr>
+      </table>
+
+      <table>
+        <tr><th class="Exp">Préparateur en conditionnement</th><td><time>12/2024 – 04/2025</time></td></tr>
+        <tr><th>Nutrition et Santé</th></tr>
+      </table>
+
+      <table>
+        <tr><th class="Exp">Pilote de lignes de production</th><td><time>10/2020 – 09/2024</time></td></tr>
+        <tr><th>Les Fromageries Occitanes</th></tr>
+      </table>
+
+      <table>
+        <tr><th class="Exp">Préparateur en conditionnement</th><td><time>09/2019 – 09/2019</time></td></tr>
+        <tr><th>Compagnie Montagne Noire</th></tr>
+      </table>
+
+      <table>
+        <tr><th class="Exp">Employé de laboratoire</th><td><time>04/2019 – 08/2019</time></td></tr>
+        <tr><th>Récapé</th></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <a class="social-icon" href="#twitter" aria-label="Twitter">
+      <img src="./Icons/twitter.svg" alt="Twitter">
+    </a>
+    <a class="social-icon" href="#insta" aria-label="Instagram">
+      <img src="./Icons/instagram.svg" alt="Instagram">
+    </a>
+    <a class="social-icon" href="#linkedin" aria-label="LinkedIn">
+      <img src="./Icons/linkedin.svg" alt="LinkedIn">
+    </a>
+    <a class="social-icon" href="#github" aria-label="GitHub">
+      <img src="./Icons/github.svg" alt="GitHub">
+    </a>
+  </footer>
+
 </body>
 </html>
