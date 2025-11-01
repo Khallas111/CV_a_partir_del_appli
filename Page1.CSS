@@ -46,9 +46,8 @@ body {
 header {
   display: flex;
   background: var(--accent);
-  border-radius: var(--radius);
   padding: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0px;
 }
 
 .header-inner {
@@ -123,7 +122,133 @@ header {
   margin-left: 250px;
   text-align: center;
 }
+/* ====== Bandeau Gauche ====== */
+.Left {
+  width: 300px;
+  background-color: #e3e3e3ac;
+  padding-left: 30px;
+}
+
+/* === Compétences === */
+.Comp li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .4rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.Comp {
+  list-style: none;
+  padding: 0 20px 0 0;
+}
+  
+.stars i {
+  color: #ffffff;
+  -webkit-text-stroke: 1px #17abb3;
+  margin-left: 2px;
+  }
+
+/* Coloration selon le niveau */
+.level-1 .stars i:nth-child(-n+1),
+.level-2 .stars i:nth-child(-n+2),
+.level-3 .stars i:nth-child(-n+3),
+.level-4 .stars i:nth-child(-n+4),
+.level-5 .stars i:nth-child(-n+5) {
+  color: #17abb3;
+}
+/* === Langues === */
+.Langues {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 0.3rem; 
+  column-gap: 0.5rem;
+  padding-right: 20px;
+}
+
+.Langues dt {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #222;
+}
+
+.Langues dd {
+  font-family: 'Raleway-Regular', sans-serif;
+  color: #555;
+  text-align: right;
+  margin: 0;
+}
+
+.Langues dt::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+}
+
+.Langues dl > dt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Langues dl > dt + dd {
+  text-align: right;
+}
+/* ====== Qualités ====== */
+.Left section:nth-of-type(3) ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Raleway-Regular', sans-serif;
+}
+
+.Left section:nth-of-type(3) ul li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+/* carrés bleus */
+.Left section:nth-of-type(3) ul li::before {
+  content: "";
+  width: 0.6rem;    /* largeur du carré */
+  height: 0.6rem;   /* hauteur du carré */
+  background-color: var(--accent);
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+}
+/* ====== Centres d’intérêt ====== */
+.Left section:nth-of-type(4) ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Raleway-Regular', sans-serif;
+}
+
+.Left section:nth-of-type(4) ul li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+/* carrés bleus */
+.Left section:nth-of-type(4) ul li::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--accent);
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+}
 /* ====== Contenu principal ====== */
+.Right {
+  flex: 1;
+}
 h3 {
   color: var(--accent);
   font-family: 'Raleway-Bold';
@@ -135,32 +260,11 @@ p {
   text-align: justify;
 }
 
-.Comp {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  padding: 0;
-}
-.Comp li {
-  background: var(--hover-bg);
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
+
 .Corps{
   display: flex;
   gap: 50px;
-  margin: 0 50px;
-}
-/* Langues */
-dt {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
-dd {
-  margin: 0 0 0.6rem 1rem;
+  margin: 0 50px 0 0;
 }
 
 /* ====== Tables Formations / Expériences ====== */
