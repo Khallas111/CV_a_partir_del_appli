@@ -44,6 +44,7 @@ body {
 
 /* ====== Header ====== */
 header {
+  display: flex;
   background: var(--accent);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -64,6 +65,7 @@ header {
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: zoom-in;
+  margin-left: 50px;
 }
 
 .profile-img:hover {
@@ -85,22 +87,42 @@ header {
 }
 
 .contacts {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  max-width: 320px; 
+  align-self: center;
 }
+
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .contacts a {
   color: var(--title-color);
-  background: rgba(255,255,255,0.1);
   padding: 6px 10px;
   border-radius: 6px;
   text-decoration: none;
-  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  
+}
+.contacts a:hover i {
+  transform: scale(1.2);
 }
 .contacts a:hover {
   background: rgba(255,255,255,0.2);
 }
-
+.identity{
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  text-align: center;
+}
 /* ====== Contenu principal ====== */
 h3 {
   color: var(--accent);
@@ -131,9 +153,6 @@ p {
   display: flex;
   gap: 50px;
   margin: 0 50px;
-}
-.Left{
-  width: 
 }
 /* Langues */
 dt {
