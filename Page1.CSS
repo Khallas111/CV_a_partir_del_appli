@@ -255,11 +255,11 @@ h3 {
   margin-top: 1.2rem;
 }
 
-p {
+.Right p {
   text-indent: 50px;
   text-align: justify;
+  margin-bottom: 1rem;
 }
-
 
 .Corps{
   display: flex;
@@ -272,7 +272,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
-  transition: background 0.2s, border-left 0.2s;
+  transition: 0.2s, border-left 0.2s;
 }
 tr:hover {
   background: var(--hover-bg);
